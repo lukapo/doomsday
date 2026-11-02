@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avengers: Doomsday — Odbrojavanje</title>
+  <meta name="description" content="Odbrojavanje do početka filma Avengers: Doomsday — 17.12.2026. u 20:00, CineStar Arena Zagreb." />
+  <meta name="theme-color" content="#040a12" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="icon" href="assets/title.png" />
+  <link rel="preload" as="image" href="assets/background.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__storm" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <img
+        class="logo"
+        src="assets/title.png"
+        alt="Avengers: Doomsday"
+        width="800"
+        height="450"
+      />
+
+      <h1 class="hero__title">Doomsday je blizu</h1>
+
+      <p class="hero__subtitle">
+        Četvrtak, 17. prosinca 2026. u 20:00
+        <span class="dot" aria-hidden="true">•</span>
+        CineStar Arena, Zagreb
+      </p>
+
+      <!-- Countdown -->
+      <section class="countdown" id="countdown" role="timer" aria-live="off">
+        <div class="countdown__unit">
+          <span class="countdown__value" id="days">--</span>
+          <span class="countdown__label">dana</span>
+        </div>
+        <div class="countdown__unit">
+          <span class="countdown__value" id="hours">--</span>
+          <span class="countdown__label">sati</span>
+        </div>
+        <div class="countdown__unit">
+          <span class="countdown__value" id="minutes">--</span>
+          <span class="countdown__label">minuta</span>
+        </div>
+        <div class="countdown__unit">
+          <span class="countdown__value" id="seconds">--</span>
+          <span class="countdown__label">sekundi</span>
+        </div>
+      </section>
+
+      <p class="sr-only" id="countdown-sr" aria-live="polite"></p>
+
+      <!-- Prikazuje se kad countdown dođe do nule -->
+      <section class="liftoff" id="liftoff" hidden>
+        <p class="liftoff__title">Film je počeo</p>
+        <p class="liftoff__text">Mobiteli dolje, kokice gore. Uživajte!</p>
+      </section>
+
+      <div class="actions">
+        <a class="btn btn--primary" href="avengers-doomsday.ics" download>
+          Dodaj u kalendar
+        </a>
+        <a
+          class="btn btn--ghost"
+          href="https://www.cinestarcinemas.hr/kina/zagreb-arena"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CineStar Arena
+        </a>
+      </div>
+
+      <ul class="crew" aria-label="Ekipa">
+        <li class="crew__member"><span class="crew__badge">B</span>Bruno</li>
+        <li class="crew__member"><span class="crew__badge">D</span>Dražen</li>
+        <li class="crew__member"><span class="crew__badge">M</span>Mihael</li>
+        <li class="crew__member"><span class="crew__badge">L</span>Luka</li>
+      </ul>
+    </div>
+
+    <a class="scroll-hint" href="#details" aria-label="Pogledaj detalje">
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+        <path d="M4 7l8 7 8-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M4 13l8 7 8-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/>
+      </svg>
+    </a>
+  </header>
+
+  <!-- ============ DETALJI ============ -->
+  <main class="details" id="details">
+    <h2 class="details__heading">Detalji okupljanja</h2>
+
+    <div class="cards">
+      <article class="card">
+        <h3 class="card__title">Datum i vrijeme</h3>
+        <p class="card__big">17.12.2026.</p>
+        <p class="card__text">Četvrtak, 20:00 (projekcija)</p>
+        <p class="card__note">Nalazimo se u 18:30 kod Luke.</p>
+      </article>
+
+      <article class="card">
+        <h3 class="card__title">Lokacija</h3>
+        <p class="card__big">CineStar Arena</p>
+        <p class="card__text">Arena Centar, Zagreb</p>
+        <p class="card__note">
+          <a href="https://maps.google.com/?q=CineStar+Arena+Centar+Zagreb" target="_blank" rel="noopener noreferrer">
+            Otvori na karti
+          </a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3 class="card__title">Ekipa</h3>
+        <p class="card__big">4 mjesta</p>
+        <p class="card__text">Bruno &middot; Dražen &middot; Mihael &middot; Luka</p>
+        <p class="card__note">Tko zakasni, plaća kokice :)</p>
+      </article>
+    </div>
+
+    <footer class="footer">
+      <p>Avengers: Doomsday &middot; naše privatno odbrojavanje</p>
+      <p class="footer__muted">Vrijeme se računa za vremensku zonu Zagreba (UTC+1).</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

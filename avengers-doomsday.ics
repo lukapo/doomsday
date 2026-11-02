@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Doomsday Countdown//HR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:avengers-doomsday-20261217@local
+DTSTAMP:20261102T000000Z
+DTSTART:20261217T190000Z
+DTEND:20261217T220000Z
+SUMMARY:Avengers: Doomsday
+LOCATION:CineStar Arena\, Arena Centar\, Zagreb
+DESCRIPTION:Bruno\, Drazen\, Mihael i Luka.\nNalazimo se u 18:30 kod Luke
+ .\nTko zakasni\, placa kokice :)
+BEGIN:VALARM
+TRIGGER:-PT90M
+ACTION:DISPLAY
+DESCRIPTION:Okupljanje kod Luke u 18:30 - Avengers: Doomsday
+END:VALARM
+END:VEVENT
+END:VCALENDAR
